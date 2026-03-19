@@ -1,5 +1,5 @@
 import styles from './styles.module.css';
-import { HistoryIcon, HouseIcon, SettingsIcon, SunIcon } from 'lucide-react';
+import { HistoryIcon, HouseIcon, MoonIcon, SettingsIcon, SunIcon } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 type AvailableThemes = 'dark' | 'light';
@@ -12,7 +12,7 @@ export function Menu() {
 
   const nextThemeIcon = {
     dark: <SunIcon />,
-    light: <SettingsIcon />
+    light: <MoonIcon />
   }
 
   function handleThemeChange(
